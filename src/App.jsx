@@ -3,6 +3,7 @@ import Acronym from './components/Acronym'
 import GuidingTeams from './components/GuidingTeams'
 import Approach from './components/Approach'
 import Contact from './components/Contact'
+import Team from './components/Team'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300">
             <a href="#acronym" className="hover:text-white">Acronym</a>
             <a href="#approach" className="hover:text-white">Approach</a>
+            <a href="#team" className="hover:text-white">Our Team</a>
             <a href="#contact" className="hover:text-white">Contact</a>
           </nav>
           <a href="#contact" className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-500 text-white text-sm font-semibold hover:bg-emerald-400 transition-colors">Get in touch</a>
@@ -26,6 +28,7 @@ function App() {
           <Approach />
         </section>
         <GuidingTeams />
+        <Team />
         <Contact />
       </main>
 
