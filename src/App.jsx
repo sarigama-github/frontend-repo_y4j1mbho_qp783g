@@ -4,6 +4,8 @@ import GuidingTeams from './components/GuidingTeams'
 import Approach from './components/Approach'
 import Contact from './components/Contact'
 import Team from './components/Team'
+import About from './components/About'
+import Chatbot from './components/Chatbot'
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#" className="font-extrabold tracking-tight text-emerald-400 text-xl">iVentice</a>
           <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300">
+            <a href="#about" className="hover:text-white">About</a>
             <a href="#acronym" className="hover:text-white">Acronym</a>
             <a href="#approach" className="hover:text-white">Approach</a>
             <a href="#team" className="hover:text-white">Our Team</a>
@@ -23,6 +26,7 @@ function App() {
 
       <main>
         <Hero />
+        <About />
         <Acronym />
         <section id="approach">
           <Approach />
@@ -35,6 +39,9 @@ function App() {
       <footer className="border-t border-white/10 py-8 text-center text-slate-400 text-sm">
         <p>© {new Date().getFullYear()} iVentice • Ideate to Scalability</p>
       </footer>
+
+      {/* Persistent Chatbot */}
+      <Chatbot />
     </div>
   )
 }
